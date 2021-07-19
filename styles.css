@@ -4,7 +4,30 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
-
+@media screen and (max-width: 800px)
+{
+  html
+  {
+    /* Itself */
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  html
+  {
+    /* Itself */
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 350px)
+{
+  html
+  {
+    /* Itself */
+    font-size: 10px;
+  }
+}
 
 
 /* Body */
@@ -18,16 +41,17 @@ body
   display: flex;
   flex-direction: column;
   /* Itself */
-  width: 60em;
+  max-width: 60em;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    body
-    {
-        /* Itself */
-        width: 35em;
-    }
+  body
+  {
+    /* Itself */
+    width: 100%;
+  }
 }
+
 
 *
 {
@@ -49,25 +73,31 @@ a
 header
 {
   /* Container */
-  margin: 5px;
+  margin: .3em;
+  margin-top: .6em;
   /* Containee */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   /* Itself */
   background-color: #1F1F1F;
-  border: 3px #1F1F1F solid;
-  border-radius: 10px;
+  border: .4em #1F1F1F solid;
+  border-radius: .7em;
   height: 11em;
-  padding: 1em;
+  padding: .5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    header
-    {
-        /* Itself */
-        height: 6em;
-        padding: .5em;
-    }
+  header
+  {
+    /* Itself */
+    height: 6em;
+    padding: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 header:hover
@@ -94,95 +124,125 @@ header a:hover
 {
   /* Container */
   flex: 1;
+  min-width: 10em;
   /* Containee */
   display: flex;
-  /* Itself */
-  padding-right: .5em;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 500px)
+{
+  #header-left
+  {
+    /* Itself */
+    min-width: 5em;
+  }
 }
 
 #header-left img
 {
   /* Container */
-  margin: auto;
+  /* margin: auto; */
   /* Itself */
   height: 10em;
-  border: .3em grey solid;
+  border: .4em grey solid;
   border-radius: 50%;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    #header-left img
-    {
-        /* Itself */
-        height: 5em;
-    }
+  #header-left img
+  {
+    /* Itself */
+    height: 5em;
+  }
 }
 
 #header-middle
 {
   /* Container */
-  flex: 2;
+  flex: 3;
   /* Containee */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  /* Itself */
+  padding-top: .3em;
+  padding-bottom: .3em;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    #header-middle
-    {
-      /* Container */
-      flex: 3;
-    }
+  #header-middle
+  {
+    /* Container */
+    flex: none;
+    width: 20em;
+  }
+}
+
+#header-middle #title-div
+{
+  /* Container */
+  flex: 2;
+  /* Containee */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-middle h1
 {
   /* Container */
-  flex: 1;
-  margin: auto;
+  margin: 0;
   /* Itself */
   padding: 0;
-  padding-bottom: .3em;
   font-size: 3.3em;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    #header-middle h1
-    {
-        /* Itself */
-        font-size: 2.15em;
-    }
+  #header-middle h1
+  {
+      /* Itself */
+      font-size: 2.15em;
+  }
+}
+
+#header-middle #subtitle-div
+{
+  /* Container */
+  flex: 2;
+  /* Containee */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-middle h2
 {
   /* Container */
-  flex: 1;
-  margin: auto;
+  margin: 0;
   /* Itself */
   font-size: 1.45em;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    #header-middle h2
-    {
-        /* Itself */
-        font-size: .95em;
-    }
+  #header-middle h2
+  {
+      /* Itself */
+      font-size: .95em;
+  }
 }
 
-#header-middle div
+#header-middle nav
 {
   /* Container */
-  flex: 1;
+  flex: 3;
   /* Containee */
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  /* Itself */
-  padding-left: 1.1em;
-  padding-right: 1.1em;
-  padding-bottom: .1em;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #header-right
@@ -194,8 +254,6 @@ header a:hover
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  /* Itself */
-  padding-right: 0.5em;
 }
 
 #language-picker
@@ -206,21 +264,43 @@ header a:hover
   background-color: #1F1F1F;
   border: none;
 }
-
+@media screen and (max-width: 500px)
+{
+  #header-middle h2
+  {
+      /* Itself */
+      font-size: .95em;
+  }
+}
 
 
 /* Navigation bar */
 
 nav ul
 {
+  /* Container */
+  flex: 1;
   /* Containee */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   /* Itself */
   list-style-type: none;
   padding: 0;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
 }
+@media screen and (max-width: 500px)
+{
+  nav ul
+  {
+    /* Itself */
+    padding-left: 1.45em;
+    padding-right: 1.45em;
+  }
+}
+
 
 nav ul li a
 {
@@ -228,13 +308,13 @@ nav ul li a
   font-size: 1em;
   font-weight: bold;
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 500px)
 {
-    nav ul li a
-    {
-      /* Itself */
-      font-size: .8em;
-    }
+  nav ul li a
+  {
+    /* Itself */
+    font-size: .8em;
+  }
 }
 
 
@@ -245,10 +325,11 @@ nav ul li a
 section
 {
   /* Container */
-  margin: 5px;
+  margin: .3em;
   /* Itself */
-  border: 3px #1F1F1F solid;
-  border-radius: 20px;
+  border: .4em #1F1F1F solid;
+  border-radius: .7em;
+  padding: 0;
 }
 
 section:hover
@@ -258,36 +339,42 @@ section:hover
   border-right-color: #3F3F3F;
 }
 
+section .title-div {
+  /* Container */
+  margin: -.1em;
+  margin-bottom: 0;
+  /* Itself */
+  background-color: #1F1F1F;
+  padding: .5em;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
+
 section h2 {
   /* Container */
   margin: 0;
   /* Itself */
-  background-color: #1F1F1F;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 1.5em;
 }
 
-section .main-div {
+section .text-div {
   /* Container */
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 1em;
   /* Containee */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   /* Itself */
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 section .sub-div
 {
   /* Container */
   margin: 0;
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
 section h3 {
@@ -301,9 +388,14 @@ section h3 {
 section p, ul {
   /* Container */
   margin: 0;
-  margin-top: 5px;
+  margin-top: .5em;
   /* Itself */
   font-size: 1em;
+}
+
+section ul {
+  /* Itself */
+  padding-left: 1.5em;
 }
 
 section ul li {
@@ -327,10 +419,12 @@ section .compact-list li {
 footer
 {
   /* Container */
-  margin: 5px;
+  margin: 0;
   /* Containee */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* Itself */
+  padding: 0;
 }
