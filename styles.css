@@ -250,16 +250,20 @@ section p, ul {
   font-size: 1em;
 }
 
-section li {
+section ul li {
   /* Itself */
   padding-top: .5em;
 }
 
-ul li:first-child {
+section ul li:first-child {
   /* Itself */
   padding-top: 0;
 }
 
+section .compact-list li {
+  /* Itself */
+  padding-top: 0;
+}
 
 
 /* Footer */
