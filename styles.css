@@ -20,11 +20,19 @@ body
   /* Itself */
   width: 60em;
 }
+@media screen and (max-width: 900px)
+{
+    body
+    {
+        /* Itself */
+        width: 35em;
+    }
+}
 
 *
 {
   font-family: "Computer Modern", sans-serif;
-  text-align: justify;;
+  text-align: justify;
   color: #E0E0E0;
 }
 
@@ -42,7 +50,6 @@ header
 {
   /* Container */
   margin: 5px;
-  margin-top: 10px;
   /* Containee */
   display: flex;
   flex-direction: row;
@@ -52,6 +59,15 @@ header
   border-radius: 10px;
   height: 11em;
   padding: 1em;
+}
+@media screen and (max-width: 900px)
+{
+    header
+    {
+        /* Itself */
+        height: 6em;
+        padding: .5em;
+    }
 }
 
 header:hover
@@ -90,8 +106,16 @@ header a:hover
   margin: auto;
   /* Itself */
   height: 10em;
-  border: 5px grey solid;
+  border: .3em grey solid;
   border-radius: 50%;
+}
+@media screen and (max-width: 900px)
+{
+    #header-left img
+    {
+        /* Itself */
+        height: 5em;
+    }
 }
 
 #header-middle
@@ -101,6 +125,14 @@ header a:hover
   /* Containee */
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 900px)
+{
+    #header-middle
+    {
+      /* Container */
+      flex: 3;
+    }
 }
 
 #header-middle h1
@@ -113,6 +145,14 @@ header a:hover
   padding-bottom: .3em;
   font-size: 3.3em;
 }
+@media screen and (max-width: 900px)
+{
+    #header-middle h1
+    {
+        /* Itself */
+        font-size: 2.15em;
+    }
+}
 
 #header-middle h2
 {
@@ -121,6 +161,14 @@ header a:hover
   margin: auto;
   /* Itself */
   font-size: 1.45em;
+}
+@media screen and (max-width: 900px)
+{
+    #header-middle h2
+    {
+        /* Itself */
+        font-size: .95em;
+    }
 }
 
 #header-middle div
@@ -163,7 +211,7 @@ header a:hover
 
 /* Navigation bar */
 
-header nav ul
+nav ul
 {
   /* Containee */
   display: flex;
@@ -174,11 +222,19 @@ header nav ul
   padding: 0;
 }
 
-header nav ul li a
+nav ul li a
 {
   /* Itself */
   font-size: 1em;
   font-weight: bold;
+}
+@media screen and (max-width: 900px)
+{
+    nav ul li a
+    {
+      /* Itself */
+      font-size: .8em;
+    }
 }
 
 
@@ -190,7 +246,6 @@ section
 {
   /* Container */
   margin: 5px;
-  margin-top: 10px;
   /* Itself */
   border: 3px #1F1F1F solid;
   border-radius: 20px;
