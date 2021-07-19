@@ -1,0 +1,247 @@
+/* Html */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Body */
+
+body
+{
+  /* Container */
+  margin: auto;
+  background-color: black;
+  /* Containee */
+  display: flex;
+  flex-direction: column;
+  /* Itself */
+  width: 60em;
+}
+
+*
+{
+  font-family: "Computer Modern", sans-serif;
+  text-align: justify;;
+  color: #E0E0E0;
+}
+
+a
+{
+  color: grey;
+  text-decoration: none;
+}
+
+
+
+/* Header */
+
+header
+{
+  /* Container */
+  margin: 5px;
+  margin-top: 10px;
+  /* Containee */
+  display: flex;
+  flex-direction: row;
+  /* Itself */
+  background-color: #1F1F1F;
+  border: 3px #1F1F1F solid;
+  border-radius: 10px;
+  height: 11em;
+  padding: 1em;
+}
+
+header:hover
+{
+  border-left-color: #3F3F3F;
+  border-right-color: #3F3F3F;
+}
+
+header a
+{
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+header a:hover
+{
+  color: grey;
+}
+
+#header-left
+{
+  /* Container */
+  flex: 1;
+  /* Containee */
+  display: flex;
+  /* Itself */
+  padding-right: .5em;
+}
+
+#header-left img
+{
+  /* Container */
+  margin: auto;
+  /* Itself */
+  height: 10em;
+  border: 5px grey solid;
+  border-radius: 50%;
+}
+
+#header-middle
+{
+  /* Container */
+  flex: 2;
+  /* Containee */
+  display: flex;
+  flex-direction: column;
+}
+
+#header-middle h1
+{
+  /* Container */
+  flex: 1;
+  margin: auto;
+  /* Itself */
+  padding: 0;
+  padding-bottom: .3em;
+  font-size: 3.3em;
+}
+
+#header-middle h2
+{
+  /* Container */
+  flex: 1;
+  margin: auto;
+  /* Itself */
+  font-size: 1.45em;
+}
+
+#header-middle div
+{
+  /* Container */
+  flex: 1;
+  /* Containee */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Itself */
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  padding-bottom: .1em;
+}
+
+#header-right
+{
+  /* Container */
+  flex: 1;
+  /* Containee */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* Itself */
+  padding-right: 0.5em;
+}
+
+#language-picker
+{
+  /* Container */
+  margin-top: .5em;
+  /* Itself */
+  background-color: #1F1F1F;
+  border: none;
+}
+
+
+
+/* Navigation bar */
+
+header nav ul
+{
+  /* Containee */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Itself */
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li a
+{
+  /* Itself */
+  font-weight: bold;
+}
+
+
+
+
+/* Section */
+
+section
+{
+  border: 3px #1F1F1F solid;
+  border-radius: 20px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+section:hover
+{
+  border-left-color: #3F3F3F;
+  border-right-color: #3F3F3F;
+}
+
+section h2 {
+  margin: 0;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1F1F1F;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+section .main-div {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section .sub-div
+{
+  margin: 0;
+  margin-top: 20px;
+}
+
+section h3 {
+  margin: 0;
+  /* margin-top: 20px; */
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+section p, ul {
+  margin: 0;
+  margin-top: 5px;
+}
+
+
+
+/* Footer */
+
+footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  margin: 5px;
+}

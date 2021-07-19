@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title> Mathieu Lerouge </title>
+    <!--- Why are looking at my code? --->
+    <!--- My cooking website: will come soon! --->
+  </head>
+
+  <body>
+
+    <header>
+      <div id="header-left"> <img src="photo.jpg" alt="photo de profil"/> </div>
+      <div id="header-middle">
+        <h1 > Mathieu Lerouge </h1>
+        <h2> PhD Student at
+          <a href="http://centralesupelec.fr/" target="_blank">
+            CentraleSupélec</a>
+          <a href="http://mics.centralesupelec.fr/" target="_blank">MICS</a>
+        </h2>
+        <div>
+          <nav>
+            <ul id="navbar">
+              <li> <a href="#aboutme"> About me </a> </li>
+              <li> <a href="#research"> Research </a> </li>
+              <li> <a href="#teaching"> Teaching </a> </li>
+              <li> <a href="#links"> Links </a> </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="header-right">
+        <!-- <select id="language-picker" data-width="fit">
+          <option lang="en" value="english" selected>English</option>
+          <option lang="es" value="espanol">Español</option>
+          <option lang="fr" value="francais">Français</option>
+        </select> -->
+      </div>
+    </header>
+
+    <!-- <div id="sticky-navbar">
+      <div id="sticky-navbar-inner">
+        <ul>
+          <li> <a href="#aboutme"> About me </a> </li>
+          <li> <a href="#research"> Research </a> </li>
+          <li> <a href="#teaching"> Teaching </a> </li>
+          <li> <a href="#links"> Links </a> </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- <script>
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script> -->
+
+    <section>
+      <h2 id="aboutme"> About me </h2>
+      <div class="main-div">
+        <div class="sub-div">
+          <h3> Current position</h3>
+          <p> I am a PhD Student in Computer Sciences at
+            <a href="http://mics.centralesupelec.fr/" target="_blank">MICS</a>
+            (<i>Mathématiques et Informatique pour la Complexité
+            et les Systèmes</i>) laboratory in
+            <a href="http://centralesupelec.fr/" target="_blank">
+              CentraleSupélec</a>.
+            My PhD, which started in December 2020, aims at developping
+            approaches capable of providing explanations to the results
+            stemming from optimization systems.
+            <!-- <br> More details about my curriculum can be found in CV,
+            <a href="http://centralesupelec.fr/" target="_blank">here in English</a>
+            or
+            <a href="http://centralesupelec.fr/" target="_blank">here in French</a>. -->
+          </p>
+        </div>
+        <div class="sub-div">
+          <h3> Topics of interest </h3>
+          <ul>
+            <li> Operations Research </li>
+            <!-- <li> Mixed-Integer Linear Programming </li> -->
+            <li> Artificial Intelligence </li>
+            <li> Explainability </li>
+          </ul>
+        </div>
+        <div class="sub-div">
+          <h3> Contacts </h3>
+          <p> Mathieu Lerouge <br>
+            CentraleSupélec - Bâtiment Bouygues <br>
+            Laboratoire MICS <br>
+            3, rue Joliot Curie <br>
+            91190, Gif-Sur-Yvettes <br>
+            Email: mathieu [dot] lerouge [@] centralesupelec [dot] fr <br>
+            LinkedIn: <a href="http://linkedin.com/in/mathieulerouge75"
+              target="_blank"> mathieulerouge75 </a>
+          </p>
+        </div>
+        <!-- <div class="sub-div">
+          <p> CV in
+            <a href="MathieuLerougeCVEn.pdf"> [En] </a>  <a href="MathieuLerougeCVFr.pdf"> [Fr] </a> </p>
+          <figure>
+            <img src="icon_question.png" alt="explanability" /img>
+            <figcaption> Illustration </figcaption>
+          </figure>
+        </div> -->
+      </div>
+    </section>
+
+    <section>
+      <h2 id="research"> Research </h2>
+      <div class="main-div">
+        <div class="sub-div">
+          <h3> PhD </h3>
+          <ul>
+            <li> <strong> Subject: </strong> Designing explanation schemes for
+              recommendations stemming from optimization systems, <br>
+              application to scheduling problems for facility management. </li>
+            <li> <strong> Abstract: </strong>
+              Mathematical optimization offers handy tools for finding solutions
+              to problems with well-defined objectives
+              (<i>e.g. </i> scheduling).
+              However, optimization systems (solvers or any software interfacing
+              an optimization process) are often viewed as unexplainable
+              black boxes whose solutions are inaccessible to users
+              and with which they cannot interact.
+              We propose to address the question of how to provide an output
+              from an optimization system that is intelligible to a human,
+              how to provide explanations in addition to the solutions
+              obtained with an optimization system.
+              This work is mostly in line with recent concerns about the
+              construction of justification and explanation for recommendations
+              in autonomous systems. With the recent era of explainable AI,
+              models explanability and interpretability
+              have gained significant interest. </li>
+            <li> <strong> Key-words: </strong> Operations Research, Scheduling,
+              Mixed-Integer Linear Programming, Explanation. </li>
+            <li> <strong> Supervisors: </strong>
+              <a href="http://celine-gicquel.e-monsite.com/">
+                Céline Gicquel
+              </a> (LRI),
+              <a href="https://wassilaouerdane.github.io/"  target="_blank">
+                Wassila Ouerdane
+              </a> (MICS),
+              <a href="https://www.centralesupelec.fr/fr/2EBDCB86-64A4-4747-96E8-C3066CB61F3D" target="_blank">
+                Vincent Mousseau
+              </a> (MICS).
+            </li>
+            <li> <strong> In collaboration with: </strong>
+              <a href="https://decisionbrain.com/fr/" target="_blank">
+                DecisionBrain
+              </a>
+              and
+              <a href="https://www.ibm.com/fr-fr"> IBM </a>
+              within the joint public-private (PSPC) project in AI called
+              <a href="https://www.universite-paris-saclay.fr/en/news/artificial-intelligence-digital-automation-aida-promising-joint-public-private-project-ai" target="_blank">
+                AIDA</a>.
+            </li>
+            <li> <strong> Date: </strong> December 2020 - ... </li>
+          </ul>
+        </div>
+        <div class="sub-div">
+          <h3> Publications </h3>
+          <ul>
+            <li> Coming soon... </li>
+          </ul>
+        </div>
+        <div class="sub-div">
+          <h3> Participation to events </h3>
+          <ul>
+            <li> Coming soon... </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="teaching"> Teaching </h2>
+      <div class="main-div">
+        <div class="sub-div">
+          <h3> Teaching assitant at CentraleSupélec </h3>
+          <ul>
+            <li> Decision Support: Models, algorithms and implementation
+              (Supervised classes and practical works, Spring 2021) <br>
+              Course includes
+              modeling of decision problems using mathematical programming,
+              multiobjective optimization,
+              implementation using Python & GUROBI,
+              metaheuristics for combinatorial problems
+            </li>
+            <li> Coming soon... </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="links"> Links </h2>
+      <div class="main-div">
+        <div class="sub-div">
+          <ul>
+            <li> <a href="http://linkedin.com/in/mathieulerouge75"
+              target="_blank"> My LinkedIn </a> </li>
+            <li> <a href="http://centralesupelec.fr/"
+              target="_blank"> CentraleSupélec </a> </li>
+            <li> <a href="http://mics.centralesupelec.fr/"
+              target="_blank"> MICS </a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p> Last update: July 2021 </p>
+    </footer>
+
+  </body>
+</html>
