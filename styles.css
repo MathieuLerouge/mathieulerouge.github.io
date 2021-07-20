@@ -142,8 +142,6 @@ header a:hover
 
 #header-left img
 {
-  /* Container */
-  /* margin: auto; */
   /* Itself */
   height: 10em;
   border: .4em grey solid;
@@ -154,6 +152,7 @@ header a:hover
   #header-left img
   {
     /* Itself */
+    border: .3em grey solid;
     height: 5em;
   }
 }
