@@ -1,3 +1,39 @@
+/* Global variables */
+
+/* To set */
+/* :root {
+  --header-bg-color: #1F1F1F;
+  --header-border-color: #1F1F1F;
+  --header-border-width: .4em;
+  --header-img-border-color: gray;
+  --header-text-color: #E0E0E0;
+  --header-text-hover-color: gray;
+  --section-title-bg-color: #1F1F1F;
+  --section-border-color: #1F1F1F;
+  --section-border-hover-color: gray;
+  --section-border-width: .4em;
+  --section-title-color: #E0E0E0;
+  --structure-color: #1F1F1F;
+  --text-hover-color: gray;
+} */
+/* or */
+:root {
+  --header-bg-color: #EBAD28;
+  --header-border-color: #EBAD28;
+  --header-border-width: .3em;
+  --header-img-border-color: gray;
+  --header-text-color: #1F1F1F;
+  --header-text-hover-color: gray;
+  --section-title-bg-color: #EBAD28;
+  --section-title-bg-hover-color: gray;
+  --section-border-color: #EBAD28;
+  --section-border-hover-color: gray;
+  --section-border-width: .2em;
+  --section-title-color: #1F1F1F;
+  --structure-color: #EBAD28;
+  --text-hover-color: gray;
+}
+
 /* Html */
 
 html {
@@ -62,8 +98,13 @@ body
 
 a
 {
-  color: grey;
+  color: var(--structure-color);
   text-decoration: none;
+}
+
+a:hover
+{
+  color: var(--text-hover-color);
 }
 
 
@@ -80,8 +121,8 @@ header
   flex-direction: row;
   justify-content: space-between;
   /* Itself */
-  background-color: #1F1F1F;
-  border: .4em #1F1F1F solid;
+  background-color: var(--header-bg-color);
+  border: var(--header-border-width) var(--header-border-color) solid;
   border-radius: .7em;
   height: 11em;
   padding: .5em;
@@ -103,21 +144,21 @@ header
 header:hover
 {
   /* Itself */
-  border-left-color: #3F3F3F;
-  border-right-color: #3F3F3F;
+  /* border-left-color: #3F3F3F;
+  border-right-color: #3F3F3F; */
 }
 
 header a
 {
   /* Itself */
-  color: #E0E0E0;
+  color: var(--header-text-color);
   text-decoration: none;
 }
 
 header a:hover
 {
   /* Itself */
-  color: grey;
+  color: var(--header-text-hover-color);
 }
 
 #header-left
@@ -143,8 +184,9 @@ header a:hover
 #header-left img
 {
   /* Itself */
+  vertical-align: bottom;
   height: 10em;
-  border: .4em grey solid;
+  border: .3em var(--header-img-border-color) solid;
   border-radius: 50%;
 }
 @media screen and (max-width: 500px)
@@ -152,7 +194,7 @@ header a:hover
   #header-left img
   {
     /* Itself */
-    border: .3em grey solid;
+    border: .3em var(--header-img-border-color) solid;
     height: 5em;
   }
 }
@@ -197,6 +239,7 @@ header a:hover
   /* Itself */
   padding: 0;
   font-size: 3.3em;
+  color: var(--header-text-color);
 }
 @media screen and (max-width: 500px)
 {
@@ -224,6 +267,7 @@ header a:hover
   margin: 0;
   /* Itself */
   font-size: 1.45em;
+  color: var(--header-text-color);
 }
 @media screen and (max-width: 500px)
 {
@@ -325,8 +369,10 @@ section
 {
   /* Container */
   margin: .3em;
+  margin-top: .5em;
+  margin-bottom: .5em;
   /* Itself */
-  border: .4em #1F1F1F solid;
+  border: var(--section-border-width) var(--section-border-color) solid;
   border-radius: .7em;
   padding: 0;
 }
@@ -334,8 +380,9 @@ section
 section:hover
 {
   /* Itself */
-  border-left-color: #3F3F3F;
-  border-right-color: #3F3F3F;
+  border-left-color: var(--section-border-hover-color);
+  border-right-color: var(--section-border-hover-color);
+  border-bottom-color: var(--section-border-hover-color);
 }
 
 section .title-div {
@@ -343,17 +390,23 @@ section .title-div {
   margin: -.1em;
   margin-bottom: 0;
   /* Itself */
-  background-color: #1F1F1F;
+  background-color: var(--section-title-bg-color);
+  border-radius: .5em;
   padding: .5em;
   padding-left: 1.6em;
   padding-right: 1.6em;
 }
+
+/* section:hover .title-div {
+  background-color: var(--section-title-bg-hover-color);
+} */
 
 section h2 {
   /* Container */
   margin: 0;
   /* Itself */
   font-size: 1.5em;
+  color: var(--section-title-color);
 }
 
 section .text-div {
@@ -372,8 +425,9 @@ section .text-div {
 section .sub-div
 {
   /* Container */
-  margin: 0;
-  margin-top: 1em;
+  margin: 0em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 section h3 {
