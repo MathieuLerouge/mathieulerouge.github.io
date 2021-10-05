@@ -466,6 +466,23 @@ section .compact-list li {
   padding-top: 0;
 }
 
+section .centered-img {
+  /* Container */
+  margin-left: auto;
+  margin-right: auto;
+  /* Containee */
+  display: block;
+  /* Itself */
+  width: 50%;
+  border-radius: 1em;
+}
+
+section .centered-caption {
+  /* Itself */
+  padding-top: .5em;
+  text-align: center;
+}
+
 
 /* Footer */
 
