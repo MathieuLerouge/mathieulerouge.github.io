@@ -476,6 +476,14 @@ section .centered-img {
   width: 50%;
   border-radius: 1em;
 }
+@media screen and (max-width: 500px)
+{
+  section .centered-img
+  {
+    /* Itself */
+    width: 90%;
+  }
+}
 
 section .centered-caption {
   /* Itself */
