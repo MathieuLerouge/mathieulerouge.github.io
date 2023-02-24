@@ -77,13 +77,12 @@
           <h3> Current position</h3>
           <p> I am a PhD Student in Computer Sciences at
             <a href="http://mics.centralesupelec.fr/" target="_blank">MICS</a>
-            (<i>Mathématiques et Informatique pour la Complexité
-            et les Systèmes</i>) laboratory in
+            (<i>Mathématiques et Informatique pour la Complexité et les Systèmes</i>) laboratory in
             <a href="http://centralesupelec.fr/" target="_blank">
               CentraleSupélec</a>.
-            My PhD, which started in December 2020, aims at developing
-            approaches capable of providing explanations to the results
-            stemming from optimization systems.
+            My PhD started in December 2020.
+            It aims at developing approaches for generating explanations about the solutions stemming from optimization systems for their end-users.
+            More specifically, my work focus on generating explanations in the case of the Workforce Scheduling and Routing Problem (WSRP), a well-known NP-hard optimization problem.
             <!-- <br> More details about my curriculum can be found in CV,
             <a href="http://centralesupelec.fr/" target="_blank">here in English</a>
             or
@@ -93,9 +92,10 @@
         <div class="sub-div">
           <h3> Topics of interest </h3>
           <ul class="compact-list">
-            <li> Operations Research, optimization, metaheuristics </li>
-            <li> Artificial Intelligence </li>
-            <li> Explainability </li>
+            <li> Artificial intelligence </li>
+            <li> Optimization, mathematical programming, metaheuristics, vehicle routing problem </li>
+            <li> Decision support system </li>
+            <li> Explanations </li>
           </ul>
         </div>
         <div class="sub-div">
@@ -125,96 +125,97 @@
         <div class="sub-div">
           <h3> PhD </h3>
           <ul>
-            <li> <strong> Subject: </strong> Designing explanation schemes for
-              recommendations stemming from optimization systems, <br>
-              application to scheduling problems for facility management. </li>
+            <li> <strong> Subject: </strong>
+              Designing approaches for generating explanations about solutions stemming from optimization systems, application to the Workforce Scheduling and Routing Problem. </li>
             <li> <strong> Abstract: </strong>
-              Mathematical optimization offers handy tools for finding solutions
-              to problems with well-defined objectives
-              (<i>e.g. </i> scheduling).
-              However, optimization systems (solvers or any software interfacing
-              an optimization process) are often viewed as unexplainable
-              black boxes whose solutions are inaccessible to users
-              and with which they cannot interact.
-              We propose to address the question of how to provide an output
-              from an optimization system that is intelligible to a human,
-              how to provide explanations in addition to the solutions
-              obtained with an optimization system.
-              This work is mostly in line with recent concerns about the
-              construction of justification and explanation for recommendations
-              in autonomous systems. With the recent era of explainable AI,
-              models explanability and interpretability
-              have gained significant interest. </li>
+              Combinatorial optimization is used for modeling real-world situations as mathematical problems with well-defined objectives and constraints (<i>e.g.</i> workforce management).
+              In order to solve these mathematical problems, optimization systems, like solvers or software interfacing an optimization process, are developped by experts in optimization (<i>e.g.</i> companies specialized in optimization like DecisionBrain).
+              However, usually, the end-users of these systems are not experts in optimization.
+              As a consequence, they often view their systems as black boxes whose reasonning is inaccessible and may experience trust issues.
+              We propose to address these issues by designing approaches for generating explanations about the solutions obtained from optimization systems. More specifically, this work focus on generating explanations in the case of the Workforce Scheduling and Routing Problem (WSRP), a well-known NP-hard optimization problem.
+              This work is mostly in line with recent concerns about the construction of explanations for recommendations in autonomous systems. With the recent era of explainable AI, explanability has gained significant interest. </li>
             <li> <strong> Key-words: </strong>
-              Operations Research,
-              Optimization,
-              <!-- Mathematical Programming, -->
-              Artificial Intelligence,
-              Explanation,
-              Scheduling.
+              Artificial intelligence,
+              optimization,
+              mathematical programming,
+              routing, scheduling,
+              explanation, contrastive explanation, counterfactual explanation.
             </li>
             <li> <strong> Supervisors: </strong>
               <a href="http://celine-gicquel.e-monsite.com/"
-              target="_blank">
-                Céline Gicquel
-              </a> (LRI),
+              target="_blank"> Céline Gicquel </a> (LRI),
               <a href="https://www.centralesupelec.fr/fr/2EBDCB86-64A4-4747-96E8-C3066CB61F3D"
-              target="_blank">
-                Vincent Mousseau
-              </a> (MICS),
+              target="_blank"> Vincent Mousseau </a> (MICS),
               <a href="https://wassilaouerdane.github.io/"
-              target="_blank">
-                Wassila Ouerdane
-              </a> (MICS).
+              target="_blank"> Wassila Ouerdane </a> (MICS).
             </li>
             <li> <strong> In collaboration with: </strong>
               <a href="https://decisionbrain.com/fr/"
-              target="_blank">
-                DecisionBrain
-              </a>
+              target="_blank"> DecisionBrain </a>
               and
               <a href="https://www.ibm.com/fr-fr"> IBM </a>
               within the joint public-private (PSPC) project in AI called
-              <a href="https://www.universite-paris-saclay.fr/en/news/artificial-intelligence-digital-automation-aida-promising-joint-public-private-project-ai" target="_blank">
-                AIDA</a>.
+              <a href="https://www.universite-paris-saclay.fr/en/news/artificial-intelligence-digital-automation-aida-promising-joint-public-private-project-ai" target="_blank"> AIDA </a>.
             </li>
-            <li> <strong> Date: </strong> December 2020 - Present. </li>
+            <li> <strong> Date: </strong> December 2020 - present. </li>
           </ul>
-          <figure>
+          <!-- <figure>
             <img src="problematic_context.png" alt="explanability"
               class="centered-img" /img>
             <figcaption class="centered-caption">
               Illustration of a typical problematic situation. <br>
-              End-user: <i> "Why is he not performing the plumbing task <br>
-              in addition to the two other tasks of his planning?" </i>
+              End-user: <i> “Why is he not performing the plumbing task <br>
+              in addition to the two other tasks of his planning?” </i>
             </figcaption>
-          </figure>
+          </figure> -->
         </div>
-        <!-- <div class="sub-div">
+        <div class="sub-div">
           <h3> Publications </h3>
           <ul>
-            <li> ... </li>
+            <li> “Counterfactual explanations for Workforce Scheduling and Routing Problem”, Mathieu Lerouge, Céline Gicquel, Vincent Mousseau, Wassila Ouerdane, Proceedings of the 12th International Conference on Operations Research and Enterprise Systems (ICORES), 2023. </li>
+            <li> “Explaining solutions stemming from optimization systems solving the Workforce Scheduling and Routing Problem to their end-users”, Mathieu Lerouge, Céline Gicquel, Vincent Mousseau, Wassila Ouerdane (Working paper). </li>
           </ul>
-        </div> -->
+        </div>
         <div class="sub-div">
           <h3> Participation to events </h3>
           <ul>
             <li> Presentation
+              <a href="ROADEF_202302_presentation.pdf" target="_blank">
+              “Generating explanations of various types for end-users
+              of optimization systems,
+              application to the Workforce Scheduling and Routine Problem”</a>,
+              at the annual congress in Operations Research and Decision Support
+              <i><a href="https://roadef2023.sciencesconf.org/" target="_blank">
+                ROADEF 2023</a></i>,
+              organized by the French association
+              <i><a href="https://www.roadef.org/societe-francaise-recherche-operationnelle-aide-decision" target="_blank">
+                ROADEF</a></i>,
+              on February 20th to 23rd 2023, in Rennes, France.
+            </li>
+            <li> Presentation
+              <a href="ICORES_202302_presentation.pdf" target="_blank">
+              “Generating couterfactual explanations for the Workforce Scheduling and Routine Problem”</a>,
+              at the annual International Conference on Operations Research and Enterprise System
+              <a href="https://icores.scitevents.org/Home.aspx/" target="_blank">
+                ICORES</a>,
+              on February 19th to 21st 2023, in Lisbon, Portugal.
+            </li>
+            <li> Presentation
               <a href="ROADEF_202202_presentation.pdf" target="_blank">
-              "Designing methods for explaning solutions
+              “Designing methods for explaning solutions
               stemming from optimization systems,
-              application to the workforce and scheduling routine"</a>,
+              application to the Workforce Scheduling and Routine Problem”</a>,
               at the annual congress in Operations Research and Decision Support
               <i><a href="https://roadef2022.sciencesconf.org/" target="_blank">
                 ROADEF 2022</a></i>,
               organized by the French association
               <i><a href="https://www.roadef.org/societe-francaise-recherche-operationnelle-aide-decision" target="_blank">
                 ROADEF</a></i>,
-              on February 23rd to 25th 2022, in Lyon.
+              on February 23rd to 25th 2022, in Lyon, France.
             </li>
             <li> Pitch
               <a href="https://www.youtube.com/watch?v=7tqxRpy8fIs" target="_blank">
-              "My PhD subject in less than 6 minutes" [in French]</a>,
+              “My PhD subject in less than 6 minutes” [in French]</a>,
               at the annual celebration day of the Doctoral School
               <i><a href="https://www.universite-paris-saclay.fr/en/ecoles-doctorales/interfaces" target="_blank">
                 Interfaces</a></i>,
@@ -222,8 +223,8 @@
             </li>
             <li> Presentation
               <a href="FIIA_202110_presentation.pdf" target="_blank">
-              "Challenges of designing explanation tools
-              for optimization systems"</a>,
+              “Challenges of designing explanation tools
+              for optimization systems”</a>,
               at the seminar
               <i> <a href="https://afia.asso.fr/fiia-2021/" target="_blank">
                 Forum Industriel de l’Intelligence Artificielle (FIIA)
@@ -233,23 +234,29 @@
               l'Intelligence Artificielle (AFIA) </i>
               on the topic "Trustworthy AI:
               responsability, robustness, transparency",
-              on October 7th 2021, in Paris.
+              on October 7th 2021, in Paris, France.
             </li>
             <li> Poster
               <a href="IA2_202109_poster.pdf" target="_blank">
-              "Designing explanation tools for optimization systems -
-              Application to the WSRP"</a>,
+              “Designing explanation tools for optimization systems -
+              Application to the Workforce Scheduling and Routine Problem”</a>,
               at the symposium organized by the
               <i> Groupe De Recherche Intelligence Artificielle (GDRIA) -
                 <a href="http://ia2.gdria.fr/" target="_blank">
                   Institut d’Automne en Intelligence Artificielle (IA2)
                 </a>
               </i>
-              on the topic "Artificial Intelligence and Explainability",
-              from September 27th to October 1st 2021, in Paris.
+              on the topic “Artificial Intelligence and Explainability”,
+              from September 27th to October 1st 2021, in Paris, France.
             </li>
           </ul>
         </div>
+        <!-- <div class="sub-div">
+          <h3> Awards </h3>
+          <ul>
+            <li> ... </li>
+          </ul>
+        </div> -->
       </div>
     </section>
 
@@ -261,27 +268,41 @@
         <div class="sub-div">
           <h3> Teaching assistant at CentraleSupélec </h3>
           <ul>
-            <li> <strong> February 2022 - March 2022: </strong>
-              Supervised classes and practical works
-              "Decision Support: Models, algorithms and implementation".
+            <li> <strong> February 2023 - March 2023: </strong>
+              Supervised classes and practical works in
+              “Decision support: models, algorithms and programming”.
               Course includes
-              modeling of decision problems using mathematical programming,
-              multiobjective optimization,
-              metaheuristics,
-              implementation using Python & GUROBI.
+              modeling of decision problems,
+              mathematical programming,
+              multi-objective optimization,
+              metaheuristics and
+              programming using Python & GUROBI.
+            </li>
+            <li> <strong> November 2022: </strong>
+              Practical works for
+              “Coding weeks”.
+              Course includes
+              Python programming,
+              introduction to git and gitlab,
+              team work.
+            </li>
+            <li> <strong> February 2022 - March 2022: </strong>
+              Supervised classes and practical works in
+              “Decision support: models, algorithms and programming”.
             </li>
             <li> <strong> November 2021 - January 2022: </strong>
-              Supervised classes
-              "Algorithmics and Complexity".
+              Supervised classes in
+              “Algorithmics and Complexity”.
               Course includes
               data structures,
               graph algorithms,
               dynamic programming,
-              complexity of problems.
+              computational complexity,
+              complexity theory.
             </li>
             <li> <strong> February 2021 - March 2021: </strong>
-              Supervised classes and practical works
-              "Decision Support: Models, algorithms and implementation".
+              Supervised classes and practical works in
+              “Decision support: models, algorithms and programming”.
             </li>
           </ul>
         </div>
@@ -309,7 +330,7 @@
     </section>
 
     <footer>
-      <p> Last update: February 2022 </p>
+      <p> Last update: February 2023 </p>
     </footer>
 
   </body>
