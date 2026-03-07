@@ -20,9 +20,9 @@
           <h1 > Mathieu Lerouge </h1>
         </div>
         <div id="subtitle-div">
-          <h2> Postdoc at
-            <a href="https://www.unibo.it/en" target="_blank">
-              Università di Bologna</a>
+          <h2> Opitmization Scientist at
+            <a href="https://decisionbrain.com/" target="_blank">
+              DecisionBrain</a>
           </h2>
         </div>
         <nav>
@@ -74,14 +74,21 @@
       <div class="text-div">
         <div class="sub-div">
           <h3> Current position</h3>
-          <p> I am a postdoctoral fellow in Computer Science from the
+          <p>
+            I am currently an Optimization Scientist at
+            <a href="https://decisionbrain.com/" target="_blank">DecisionBrain</a>.
+            In this role, I focus on modeling complex business and operational challenges, and implementing tailor-made mathematical optimization solutions to meet clients' specific needs.
+            <br><br>
+            Previously, I was a postdoctoral fellow in Computer Science at the
             <i>Dipartimento di Ingegneria dell'Energia Elettrica e dell'Informazione "Guglielmo Marconi"</i> of the
-            <a href="https://www.unibo.it/en" target="_blank"> <i>
-              Università di Bologna</i></a>.
-            My work deals with Machine-Learning-aided reoptimization methods for real-time adjustments and human interaction. <br>
-            I have a PhD in Computer Science from the <i>Université Paris-Saclay</i>.
-            My PhD aimed at developing approaches for modeling and generating explanations about the solutions stemming from optimization systems for their end-users.
-            More specifically, it focused on providing explanations in the case of the Workforce Scheduling and Routing Problem (WSRP).
+            <i><a href="https://www.unibo.it/en" target="_blank">
+              Università di Bologna</a></i>.
+            My postdoctoral work dealt with Machine-Learning-aided reoptimization methods for real-time adjustments and human interaction.
+            <br><br>
+            I hold a PhD in Computer Science from <i><a href="http://centralesupelec.fr/" target="_blank">
+              CentraleSupélec - Université Paris-Saclay</a></i>.
+            My PhD research aimed at developing approaches for modeling and generating explanations about the solutions stemming from optimization systems for their end-users.
+            More specifically, it focused on providing user-centered explanations in the case of the Workforce Scheduling and Routing Problem (WSRP).
           </p>
         </div>
         <div class="sub-div">
@@ -90,7 +97,7 @@
             <li> Operations Research, Combinatorial Optimization, Mathematical Programming, Metaheuristics </li>
             <li> Artificial Intelligence, Machine Learning </li>
             <li> Explanations, Explainable Artificial Intelligence </li>
-            <li> Ethics and Operations Research, Ethics and Artificial Intelligence </li>
+            <li> Ethics and Operations Research, Ethics and Artificial Intelligence, Sustainability </li>
             <li> Decision support system </li>
           </ul>
         </div>
@@ -122,9 +129,11 @@
         <div class="sub-div">
           <h3> Post-doc </h3>
           <ul>
-            <li> <strong> Topic: </strong>
+            <li> <strong> Project title: </strong>
               “Machine-Learning-aided reoptimization methods for real-time adjustments and human interaction.”
-              <!-- The use of mathematical optimization methods in operational contexts often requires the ability to address changes of an optimized solution together with the ability to understand the consequences of such changes and to re-optimize. -->
+            </li>
+            <li> <strong> Project description: </strong>
+              In industrial and operational contexts, optimal solutions to combinatorial optimization problems often become infeasible due to unpredictable disruptions, such as machine breakdowns. Re-solving the underlying Mixed-Integer Linear Programming (MILP) models from scratch is computationally prohibitive for real-time reactions, while simple repair heuristics typically yield poor-quality results. Furthermore, practical adjustments require operational stability, meaning the new plan should not deviate excessively from the original one. This post-doctoral research addresses these challenges by developing a novel "learning-to-reoptimize" framework. Specifically, we design a fix-and-reoptimize strategy aided by a Graph Neural Network (GNN). Given a feature graph encoding the information about the disruption and the solution before disruption, the GNN predicts the likelihood that specific binary decision variables need to be modified. This drastically reduces the MILP search space by identifying a significant subset of decision variables to hard-fix while reoptimizing the rest. Applied to the Lot Sizing Problem (LSP), numerical experiments demonstrate that this graph-based approach successfully generalizes across varying instance sizes and consistently yields good-quality solutions within short time limits.
             </li>
             <li> <strong> Institution: </strong>
               <i>Dipartimento di Ingegneria dell'Energia Elettrica e dell'Informazione "Guglielmo Marconi" (DEI)</i>,
@@ -196,6 +205,9 @@
           <h3> Publications </h3>
           <ul>
             <li>
+              “A GNN-aided fix-and-reoptimize approach for the Lot Sizing Problem”, Mathieu Lerouge, Andrea Lodi, Enrico Malaguti, Michele Monaci & Filippo Focacci, Working Paper. </a>
+            </li>
+            <li>
               <a href="Modeling_and_generating_user_centered_contrastive_explanation_for_the_WSRP.pdf", target="_blank"> “Modeling and generating user-centered contrastive explanations for the Workforce Scheduling and Routing Problem”, Mathieu Lerouge, Céline Gicquel, Vincent Mousseau & Wassila Ouerdane, ITOR, 2024. </a>
             </li>
             <li>
@@ -206,6 +218,18 @@
         <div class="sub-div">
           <h3> Participation to events </h3>
           <ul>
+            <li> Presentation
+              <a href="ROADEF_2026_presentation.pdf" target="_blank">
+              “A GNN-aided fix-and-reoptimize approach for the Lot Sizing Problem”</a>,
+              at the annual congress in Operations Research and Decision Support
+              <i><a href="https://roadef2026.sciencesconf.org/" target="_blank">
+                ROADEF 2026</a></i>,
+              organized by the French association
+              <i><a href="https://www.roadef.org/societe-francaise-recherche-operationnelle-aide-decision" target="_blank">
+                ROADEF</a></i>,
+              held in Tours (France),
+              on February 24th to 26th 2026.
+            </li>
             <li> Presentation
               <a href="ROADEF_2025_presentation.pdf" target="_blank">
               “ML-guided MILP reoptimization applied to Lot Sizing Problem”</a>,
@@ -400,13 +424,15 @@
               target="_blank"> MICS </a> </li>
             <li> <a href="https://www.unibo.it/en" target="_blank">
               Università di Bologna </a> </li>
+            <li> <a href="https://decisionbrain.com/" target="_blank">
+              DecisionBrain </a> </li>
           </ul>
         </div>
       </div>
     </section>
 
     <footer>
-      <p> Last update: December 2025 </p>
+      <p> Last update: March 2026 </p>
     </footer>
 
   </body>
